@@ -1,0 +1,80 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #825cff;
+    margin: 0px;
+}
+.clock{
+    position: relative;
+    width: 350px;
+    height: 350px;
+    border: 12px solid #333;
+    border-radius: 50%;
+    background-image: radial-gradient(circle,#fff,#f0f0f0);
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.3);
+    
+}
+.center-pin{
+ width: 20px;
+ height: 20px;
+ position: absolute;
+ background-image: radial-gradient(circle,#666,#333);
+ top: 50%;
+ left: 50%;
+ border-radius: 50%;
+ transform: translate(-50%,-50%);
+ box-shadow:0px 0px 15px rgba(0,0,0,0.5),0 0 10px rgba(0,0,0,0.7) ;
+}
+.hours-hand,.minutes-hand,.seconds-hand{
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform-origin:bottom center ;
+    transform: rotate(90deg);
+    border-radius:2px;
+}
+.hours-hand{
+    width: 8px;
+    height: 90px;
+    background-image: linear-gradient(to bottom,#444,#222);
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.5), 0 0 20px rgba(0,0,0,0.7);
+}
+.minutes-hand{
+    width: 6px;
+    height: 130px;
+    background-image: linear-gradient(to bottom,#666,#333);
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.5), 0 0 20px rgba(0,0,0,0.7);
+}
+.seconds-hand{
+    width: 3px;
+    height: 150px;
+    background-image: linear-gradient(to bottom,#cc0000,#800000);
+    box-shadow: 0px 0px 20px rgba(255,0,0,0.7), 0 0 25px rgba(255,0,0,1);
+}
+.marker{
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    /* background-color: #333; */
+    border-radius: 50%;
+    font-size: 18px;
+    box-shadow: 0 0 15px (rgba(0,0,0,0.5));
+}
+.marker1{
+    top: 5px;
+    left: calc(50% - 5px);
+}
+.marker2{
+    bottom: 5px;
+    left: calc(50% - 5px);
+}
+.marker3{
+    left: 5px;
+    top: calc(50% - 5px);
+}
+.marker4{
+    right: 5px;
+    bottom: calc(50% - 5px);
+}
